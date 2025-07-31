@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body {
+  height: 100vh;   /* Ensure full height */
+  margin: 0;      /* Remove default margins */
+  /* display: flex; */
+  /* flex-direction: column;  Stack elements vertically */
+  scroll-behavior: smooth;
+}
+
+.tabs {
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+}
+
+.header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.header ul {
+    list-style: none;
+}
+
+.header ul li {
+    display: inline;
+    margin-right: 20px;
+    font-weight: 700;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.headerCon,
+.header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* .headingCon{
+    width: 65%;
+} */
+.header {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: center;
+}
+
+.headerCon {
+
+    width: 98%;
+    background-color: #060049;
+    padding: 15px 65px;
+    box-shadow: #060049 0px 0px 32px;
+    color: white;
+    
+}
+
+
+.mainCon{
+    flex: 1;
+    overflow-y: auto;
+}
+
+.aboutCon{
+    margin-top: 80px;
+    /* height: 100vh; */
+}
+
+
+
+input[type="text"] {
+    width: 70%;
+    padding: 5px 15px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+input[type="submit"] {
+    width: 20%;
+    padding: 20px 5px;
+    font-size: 20px;
+    /* margin-left: 20px; */
+    cursor: pointer;
+    height: fit-content;
+    background-color: #060049;
+    color: white;
+    box-shadow: #060049 0px 0px 32px;
+    border-radius: 6px;
+    border: 2px solid #fff;
+
+}
+input[type="submit"]:hover {
+    /* background-color: #fff; */
+    /* color: #060049; */
+    border: 2px solid #060049;
+}
+
+.innerCon{
+    width: 60%;
+    margin: auto;
+    margin-top: 110px;
+}
+
+.aboutCon h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 35px;
+}
+
+.result {
+color: white;
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.formCon {
+    padding: 60px;
+    background-color: #000000;
+    /* width: 65%; */
+    margin-top: 35px;
+    padding-right: 10px!important;
+}
+
+.headingCon h1 {
+    width: 45rem;
+    max-width: 100%;
+    text-align: left;
+    font-size: 50px;
+}
+
+.formCon form {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+}
+
+
+.footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #0b004b;
+  color: white;
+  padding: 40px 20px;
+  gap: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-column h3 {
+  color: #f8b400;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #f8b400;
+}
+
+.footer-column input,
+.footer-column textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: none;
+  font-family: inherit;
+}
+
+.footer-column button {
+  background-color: #f8b400;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.footer-column button:hover {
+  background-color: #ffaa00;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a img {
+  width: 28px;
+  margin-right: 10px;
+  filter: brightness(0) invert(1); /* White icon effect */
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1);
+}
+
+
+
+
+.aboutCon {
+  padding: 60px 40px;
+  /* background-color: #ffffff; */
+  color: #000000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.aboutCon h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #000; /* matches your header/nav */
+  border-bottom: 3px solid #000;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.aboutCon section {
+  margin-bottom: 40px;
+}
+
+.aboutCon h2 {
+  font-size: 24px;
+  color: #000; /* Suggested heading color */
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.aboutCon p,
+.aboutCon ul {
+  font-size: 16px;
+  color: #000;
+}
+
+.aboutCon ul {
+  padding-left: 20px;
+}
+
+.aboutCon ul li {
+  margin-bottom: 10px;
+}
+
+.aboutCon strong {
+  font-weight: bold;
+  color: #0b004b;
+}
