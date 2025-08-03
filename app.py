@@ -2,6 +2,7 @@ from flask import Flask, render_template, request
 import pickle
 import re
 import numpy as np
+import os
 
 # Load trained model and vectorizer
 model = pickle.load(open("fake_news_model.pkl", "rb"))
@@ -16,6 +17,10 @@ def clean_text(text):
 
 # Flask app
 app = Flask(__name__)
+
+port = int(os.environ.get('PORT', 5000))
+
+app.run(host='0.0.0.0', port=port)
 
 @app.route("/", methods=["GET", "POST"])
 def home():
