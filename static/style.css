@@ -6,11 +6,16 @@
 }
 
 html, body {
-  height: 100vh;   /* Ensure full height */
-  margin: 0;      /* Remove default margins */
-  /* display: flex; */
-  /* flex-direction: column;  Stack elements vertically */
-  scroll-behavior: smooth;
+    height: 100vh;
+    margin: 0;
+    /* display: flex
+; */
+    scroll-behavior: smooth;
+    background-color: #000000ba;
+    background-image: url(news-back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: color;
 }
 
 .tabs {
@@ -20,7 +25,7 @@ html, body {
 }
 
 .header {
-    background-color: #f2f2f2;
+    /* background-color: #f2f2f2; */
     padding: 20px;
     text-align: center;
 
@@ -59,11 +64,10 @@ html, body {
 }
 
 .headerCon {
-
-    width: 98%;
-    background-color: #060049;
+width: 98%;
+    background-color: #000000;
     padding: 15px 65px;
-    box-shadow: #060049 0px 0px 32px;
+    box-shadow: #f8b40021 0px 0px 32px;
     color: white;
     
 }
@@ -96,7 +100,7 @@ input[type="submit"] {
     /* margin-left: 20px; */
     cursor: pointer;
     height: fit-content;
-    background-color: #060049;
+    background-color: #f8b400;
     color: white;
     box-shadow: #060049 0px 0px 32px;
     border-radius: 6px;
@@ -106,7 +110,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
     /* background-color: #fff; */
     /* color: #060049; */
-    border: 2px solid #060049;
+    border: 2px solid #f8b400;
 }
 
 .innerCon{
@@ -142,6 +146,7 @@ color: white;
     max-width: 100%;
     text-align: left;
     font-size: 50px;
+    color: #fff;
 }
 
 .formCon form {
@@ -152,14 +157,14 @@ color: white;
 
 
 .footer {
-    background-color: #f2f2f2;
+    background-color: #000;
     padding: 20px;
 }
 .footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: #0b004b;
+  background-color: #000
   color: white;
   padding: 40px 20px;
   gap: 20px;
@@ -240,8 +245,8 @@ color: white;
 .aboutCon {
   padding: 60px 40px;
   /* background-color: #ffffff; */
-  color: #000000;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  
   line-height: 1.7;
   max-width: 1100px;
   margin: 0 auto;
@@ -251,8 +256,8 @@ color: white;
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 30px;
-  color: #000; /* matches your header/nav */
-  border-bottom: 3px solid #000;
+  color: #fff; /* matches your header/nav */
+  border-bottom: 3px solid #fff;
   display: inline-block;
   padding-bottom: 5px;
 }
@@ -263,7 +268,7 @@ color: white;
 
 .aboutCon h2 {
   font-size: 24px;
-  color: #000; /* Suggested heading color */
+  color: #fff; /* Suggested heading color */
   margin-bottom: 15px;
   margin-top: 30px;
 }
@@ -271,7 +276,7 @@ color: white;
 .aboutCon p,
 .aboutCon ul {
   font-size: 16px;
-  color: #000;
+  color: #fff;
 }
 
 .aboutCon ul {
@@ -284,5 +289,9 @@ color: white;
 
 .aboutCon strong {
   font-weight: bold;
-  color: #0b004b;
+  color: #f8b400
+}
+
+.footer-column p {
+    color: #fff;
 }
