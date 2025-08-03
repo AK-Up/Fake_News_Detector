@@ -18,10 +18,6 @@ def clean_text(text):
 # Flask app
 app = Flask(__name__)
 
-port = int(os.environ.get('PORT', 5000))
-
-app.run(host='0.0.0.0', port=port)
-
 @app.route("/", methods=["GET", "POST"])
 def home():
     prediction = None
@@ -39,5 +35,7 @@ def home():
     return render_template("index.html", prediction=prediction)
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    # app.run(debug=False)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
 
